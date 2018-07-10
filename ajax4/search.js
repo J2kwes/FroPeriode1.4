@@ -29,7 +29,6 @@ function printArray(arr) {
     var out = "";
     var i;
     for(i = 0; i < arr.length; i++) {
-//console.log(arr[i]);
         out += '<span id="'  + arr[i] + '" onClick="showList(this.id,\'answer\')">'+ arr[i] + '</span><br>';
     }
     document.getElementById("txtHint").innerHTML = out;
