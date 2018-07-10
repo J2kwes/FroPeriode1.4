@@ -5,12 +5,11 @@ $resultArray = array();
 
 $search = $_GET['q'];
 $type = $_GET['type'];
-$con = mysqli_connect($servername,$uid,$pwd,$database);
+$con = mysqli_connect($host, $userid, $pass, $db);
 if (!$con) {
 
 }
-mysqli_select_db($con,'24442_db2
-');
+mysqli_select_db($con,'24442_db2');
 $sql = "SELECT * FROM country WHERE name LIKE '$search%' ";
 if ($type == 'list') {
     $result = mysqli_query($con,$sql);
