@@ -9,7 +9,8 @@ $con = mysqli_connect($servername,$uid,$pwd,$database);
 if (!$con) {
 
 }
-mysqli_select_db($con,'24442_db2');
+mysqli_select_db($con,'24442_db2
+');
 $sql = "SELECT * FROM country WHERE name LIKE '$search%' ";
 if ($type == 'list') {
     $result = mysqli_query($con,$sql);

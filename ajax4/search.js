@@ -1,5 +1,4 @@
-//===============================================
-function showList(str, typeSearch) { // eerste dropdownlist
+function showList(str, typeSearch) {
     console.log(typeSearch);
     if (str == "") {
         document.getElementById("txtHint").innerHTML = "";
@@ -25,7 +24,7 @@ function showList(str, typeSearch) { // eerste dropdownlist
         xmlhttp.send();
     }
 }
-//===============================================
+
 function printArray(arr) {
     var out = "";
     var i;
@@ -36,4 +35,3 @@ function printArray(arr) {
     document.getElementById("txtHint").innerHTML = out;
 
 }
-//===============================================
